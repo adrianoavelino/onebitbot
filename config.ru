@@ -3,6 +3,6 @@ require 'bundler'
 
 Bundler.require
 
-require './app/models/app'
+require './app'
 
 run App

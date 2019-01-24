@@ -1,5 +1,5 @@
 require 'sinatra/activerecord'
 require 'sinatra/activerecord/rake'
 require "pg_search"
+require './app.rb'
 load "pg_search/tasks.rb"
-require './app'
