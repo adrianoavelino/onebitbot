@@ -4,8 +4,8 @@ require 'sinatra/activerecord'
 
 require './config/database'
 
-# Load Models
 Dir["./app/models/*.rb"].each {|file| require file }
+Dir["./app/services/**/*.rb"].each {|file| require file }
 
 class App < Sinatra::Base
   get '/' do
@@ -31,5 +31,5 @@ class App < Sinatra::Base
         }
       }
     }.to_json
-  end  
+  end
 end
